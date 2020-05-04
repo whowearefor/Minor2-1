@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" type="text/css" href="css/webcss.css">
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">About Us</a>
+  <a href="#contact">Menu</a>
+  <a href="#about">Contact Us</a>
+<a href="login.html">Login </a>
+<a href="signup.html">Register</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+<body>
+<h1style="font-family:WildWest;" style="font-size:300%;"><b><center> THE DONUT BOX</center></h1>
+  </body>
+  <div id="images" background image= auto>
+</div>
+  <script type = "text/javascript">
+      function displayNextImage() {
+          x = (x === images.length - 1) ? 0 : x + 1;
+          document.getElementById("img").src = images[x];
+      }
+      function changeImage() {
+          setInterval(displayNextImage, 5000);
+      }
+
+      var images = [], x = -1;
+      images[0] = "images/donutnew2.jpg";
+      images[1] = "images/donut2.jpg";
+      images[2] = "images/donut3.jpg";
+  </script>
+  </head>
+  <div class="container">
+    <body onload = "changeImage()">
+    <img id="img" style =" width: 100% " src="images/donutnew2.jpg"/>
+
+    <div class="centered">
+    </div>
+    </body>
+  </div>
+  </html>
